@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
+html {
+  overflow-y: scroll;
+}
+* {
+  font-family: Lato, Roboto, Helvetica, Arial, sans-serif;
+}
+h2, h3 {
+  font-weight: normal;
+}
+form a h3.card-header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  font-size: 1.15rem;
+  color: #727272;
+  position: relative;
+}
+hr {
+  border-top: 1px solid rgba(0,0,0,.2);
+}
+form a h3::after {
+  float: right;
+  right: 1rem;
+  font-size: 1rem;
+  padding: 3px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+form a h3::after {
+  font-family: Ionicons;
+  content: '\f218';
+  border: none;
+}
+form a[aria-expanded='true'] h3::after {
+  content: '\f209';
+}
+form a[aria-expanded='true'] h3 {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+.card {
+  border: none;
+}
+.card-header {
+  background: none;
+}
+.modal-header .close {
+  line-height: 1.5;
+}
+#pdf-link {
+  background: #fff;
+}
